@@ -27,20 +27,33 @@ public class Controle {
         //TODO
     }
 
-    public static void exibirClientes(){
+    public static String exibirClientes(){
         String dados = "";
         for(Cliente c : clientes){
-            dados +=
+            dados += c.exibirDados() + "\n";
         }
+        return dados;
     }
-    public static void exibirFuncionarios(){
-
+    public static String exibirFuncionarios(){
+        String dados = "";
+        for(Funcionario f : funcionarios){
+            dados += f.exibirDados() + "\n";
+        }
+        return dados;
     }
-    public static void exibirFornecedores(){
-
+    public static String exibirFornecedores(){
+        String dados = "";
+        for(Fornecedor f : fornecedores){
+            dados += f.exibirDados() + "\n";
+        }
+        return dados;
     }
-    public static void exibirFlores(){
-
+    public static String exibirFlores(){
+        String dados = "";
+        for(Flor f : flores){
+            dados += f.exibirDados() + "\n";
+        }
+        return dados;
     }
     public static void exibirCompras(){
         //TODO
